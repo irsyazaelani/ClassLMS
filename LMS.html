@@ -3107,7 +3107,7 @@
 
                 <!-- Form Login Peserta -->
                 <div class="login-field">
-                    <input type="text" class="login-input" id="login-username" value="muhammadirsya" placeholder="Username atau NIM">
+                    <input type="text" class="login-input" id="login-username" value="username" placeholder="Username atau NIM">
                 </div>
                 <div class="login-field">
                     <input type="password" class="login-input" id="login-pass" placeholder="Password" onkeydown="if(event.key==='Enter') LMS.handleParticipantLogin()">
@@ -3836,7 +3836,7 @@
                 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid var(--border-color);">
                     <div>
                         <label style="font-size:12.5px; font-weight:700; display:block; margin-bottom:4px;">Ganti Secret Key Admin Baru (Kosongkan jika tetap):</label>
-                        <input type="password" class="form-control" id="admin-secret-key-setting" placeholder="Default: admin123 (Terenkripsi SHA-256)">
+                        <input type="password" class="form-control" id="admin-secret-key-setting" placeholder="Default: Axlkah23jkabw (Terenkripsi SHA-256)">
                     </div>
                     <div>
                         <label style="font-size:12.5px; font-weight:700; display:block; margin-bottom:4px;">Kode Room Sync Global (Semua Perangkat):</label>
@@ -4091,7 +4091,7 @@
 
         // Daftar 20 User Peserta dengan Nama & NIM Asli yang Diberikan
         const defaultParticipants20 = [
-            { id: "u1", username: "muhammadirsya", password: "M0123456", name: "Muhammad Irsya Zaelani", nim: "M0403251011", isOnline: false, lastAccess: "1 hour 15 mins" },
+            { id: "u1", username: "muhammadirsya", password: "M0403251011", name: "Muhammad Irsya Zaelani", nim: "M0403251011", isOnline: false, lastAccess: "1 hour 15 mins" },
             { id: "u2", username: "dewieka", password: "M0403251087", name: "Dewi Eka Leviana", nim: "M0403251087", isOnline: false, lastAccess: "2 hours 10 mins" },
             { id: "u3", username: "mikaillakhiva", password: "M0403251065", name: "Mikailla Khiva Nuandhe Nararya", nim: "M0403251065", isOnline: false, lastAccess: "3 hours 5 mins" },
             { id: "u4", username: "muhammadfakhri", password: "M0403251174", name: "Muhammad Fakhri Robbani", nim: "M0403251174", isOnline: false, lastAccess: "4 hours 20 mins" },
@@ -4154,7 +4154,7 @@
         }
 
         async function loadSavedData() {
-            const defaultHash = await sha256("admin123");
+            const defaultHash = await sha256("Axlkah23jkabw");
             const savedHash = localStorage.getItem(SECRET_HASH_STORAGE);
             adminSecretHash = savedHash || defaultHash;
 
